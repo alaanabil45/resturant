@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAPELLA | Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background: #fff;
+            color: #333;
+        }
+
+        .head {
+            background-image: url("img/shutterstock_178075700.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            color: white;
+
+        }
+
+        .logo {
+            margin-right: 100px;
+        }
+
+        header {
+            color: white;
+            padding: 10px 0;
+        }
+
+        .h {
+            text-align: center;
+            margin-top: 200px;
+            font-family: 'Brush Script MT', cursive;
+            font-weight: bolder;
+            font-size: 150px;
+        }
+
+        .hh {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+
+        .meals-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px 10%;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+        .meal {
+            width: 30%;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .meal:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .meal img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .meal-name {
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+
+        .meal-price {
+            color: #e67e22;
+            margin-bottom: 5px;
+        }
+
+        .meal-ingredients {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .menu-list {
+            width: 80%;
+            margin: 40px auto;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .menu-column {
+            width: 50%;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .menu-item-name-price {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #aaa;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .menu-item-ingredients {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            display: flex;
+            padding: 40px 10%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-left img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .footer-center {
+            text-align: center;
+        }
+
+        .footer-center h3 {
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 8px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #936d4e;
+        }
+
+        .footer-right {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .f {
+            background-color: #936d4e;
+            color: white;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .ff {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="head">
+        <header>
+            <nav>
+                <ul>
+                    <img class="logo" src="img/logo-white.png" alt="CAPELLA">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Registeration</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="h">Chef Recommended</h1>
+        <p class="hh">SIGNATURE dISHES RECOMMENDED BY OUR CHEF</p>
+    </div>
+
+    <section class="meals-row">
+        <div class="meal">
+            <img src="IMG/chickenDish.jpg" alt="Meal 1" />
+            <div class="meal-name">Grilled Chicken</div>
+            <div class="meal-price">$15</div>
+            <div class="meal-ingredients">Chicken, Spices, Olive Oil</div>
+        </div>
+        <div class="meal">
+            <img src="img/clams-fried-curry-powder-black-plate.jpg" alt="Meal 2" />
+            <div class="meal-name">Fried clams</div>
+            <div class="meal-price">$30</div>
+            <div class="meal-ingredients">clams, spicis, seaweed</div>
+        </div>
+        <div class="meal">
+            <img src="img/gourmet dish 2.jpg" alt="Meal 3" />
+            <div class="meal-name">Caesar Salad</div>
+            <div class="meal-price">$12</div>
+            <div class="meal-ingredients">Lettuce, Croutons, Caesar Dressing</div>
+        </div>
+        <div class="meal">
+            <img src="img/Imported Salmon Steak.jpg" alt="Meal 4" />
+            <div class="meal-name">Salmon Steak</div>
+            <div class="meal-price">$25</div>
+            <div class="meal-ingredients">Salmon, Herbs, Garlic Butter</div>
+        </div>
+        <div class="meal">
+            <img src="img/Baked Potato Pizza.jpg" alt="Meal 5" />
+            <div class="meal-name">Potato Pizza</div>
+            <div class="meal-price">$15</div>
+            <div class="meal-ingredients">potatos, cheese, sauce</div>
+        </div>
+        <div class="meal">
+            <img src="img/Grilled-Salmon-Sushi.jpg" alt="Meal 6" />
+            <div class="meal-name">Grilled Salmon Sushi</div>
+            <div class="meal-price">$30</div>
+            <div class="meal-ingredients">Salmon, rice, avocado</div>
+        </div>
+    </section>
+
+    <section class="menu-list">
+        <div class="menu-column">
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Margherita Pizza</span>
+                    <span>$20</span>
+                </div>
+                <div class="menu-item-ingredients">Tomato, Mozzarella, Basil</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Chicken Wrap</span>
+                    <span>$13</span>
+                </div>
+                <div class="menu-item-ingredients">Chicken, Lettuce, Sauce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Beef Tacos</span>
+                    <span>$16</span>
+                </div>
+                <div class="menu-item-ingredients">Beef, Cheese, Salsa</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Seafood Paella</span>
+                    <span>$28</span>
+                </div>
+                <div class="menu-item-ingredients">Rice, Shrimp, Mussels</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Tomato Soup</span>
+                    <span>$8</span>
+                </div>
+                <div class="menu-item-ingredients">Tomatoes, Cream, Basil</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Chocolate Cake</span>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item-ingredients">Chocolate, Flour, Sugar</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Margherita Pizza</span>
+                    <span>$20</span>
+                </div>
+                <div class="menu-item-ingredients">Tomato, Mozzarella, Basil</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Chicken Wrap</span>
+                    <span>$13</span>
+                </div>
+                <div class="menu-item-ingredients">Chicken, Lettuce, Sauce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Beef Tacos</span>
+                    <span>$16</span>
+                </div>
+                <div class="menu-item-ingredients">Beef, Cheese, Salsa</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Seafood Paella</span>
+                    <span>$28</span>
+                </div>
+                <div class="menu-item-ingredients">Rice, Shrimp, Mussels</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Tomato Soup</span>
+                    <span>$8</span>
+                </div>
+                <div class="menu-item-ingredients">Tomatoes, Cream, Basil</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Chocolate Cake</span>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item-ingredients">Chocolate, Flour, Sugar</div>
+            </div>
+        </div>
+        <div class="menu-column">
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Greek Salad</span>
+                    <span>$14</span>
+                </div>
+                <div class="menu-item-ingredients">Feta, Olives, Cucumber</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>BBQ Ribs</span>
+                    <span>$24</span>
+                </div>
+                <div class="menu-item-ingredients">Pork, BBQ Sauce, Spices</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Fish & Chips</span>
+                    <span>$18</span>
+                </div>
+                <div class="menu-item-ingredients">Fish, Potatoes, Tartar Sauce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Veggie Pasta</span>
+                    <span>$17</span>
+                </div>
+                <div class="menu-item-ingredients">Pasta, Vegetables, Tomato Sauce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Cheeseburger</span>
+                    <span>$15</span>
+                </div>
+                <div class="menu-item-ingredients">Beef Patty, Cheese, Lettuce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Apple Pie</span>
+                    <span>$9</span>
+                </div>
+                <div class="menu-item-ingredients">Apple, Cinnamon, Pastry</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Greek Salad</span>
+                    <span>$14</span>
+                </div>
+                <div class="menu-item-ingredients">Feta, Olives, Cucumber</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>BBQ Ribs</span>
+                    <span>$24</span>
+                </div>
+                <div class="menu-item-ingredients">Pork, BBQ Sauce, Spices</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Fish & Chips</span>
+                    <span>$18</span>
+                </div>
+                <div class="menu-item-ingredients">Fish, Potatoes, Tartar Sauce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Veggie Pasta</span>
+                    <span>$17</span>
+                </div>
+                <div class="menu-item-ingredients">Pasta, Vegetables, Tomato Sauce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Cheeseburger</span>
+                    <span>$15</span>
+                </div>
+                <div class="menu-item-ingredients">Beef Patty, Cheese, Lettuce</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name-price">
+                    <span>Apple Pie</span>
+                    <span>$9</span>
+                </div>
+                <div class="menu-item-ingredients">Apple, Cinnamon, Pastry</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="f">
+        <p>Experience the finest dining with our gourmet dishes and exceptional service.</p>
+    </div>
+
+    <footer>
+
+        <div class="footer-left">
+            <img src="img/image.png" alt="Restaurant Logo" />
+        </div>
+        <div class="footer-center">
+            <h3>ADDRESS</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Foodie Street, Flavor Town</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 10:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 12:00 PM - 11:00 PM</p>
+            <h3>Contact Us</h3>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: contact@restaurant.com</p>
+        </div>
+
+    </footer>
+
+    <div class="ff">
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

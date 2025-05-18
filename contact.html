@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAPELLA | About</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background: #fff;
+            color: #333;
+        }
+
+        .head {
+            background-image: url("img/resrv1.jpg");
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(255, 255, 255);
+        }
+
+        head::before {
+            content: "";
+            position: fixed;
+            background: rgba(0, 0, 0, 0.25);
+            z-index: -1;
+        }
+
+        .logo {
+            margin-right: 100px;
+        }
+
+        header {
+            color: rgb(164, 164, 164);
+            padding: 10px 0;
+        }
+
+        .h {
+            text-align: center;
+            color: rgb(210, 210, 210);
+            font-family: 'Brush Script MT', cursive;
+            font-size: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(210, 210, 210);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .contact-form {
+            width: 65%;
+        }
+
+        .contact-form h2 {
+            color: #333;
+        }
+
+        .contact-form p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .contact-form form input,
+        .contact-form form select,
+        .contact-form form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #2e2e38;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #936d4e;
+        }
+
+        .outer-border {
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            width: 20%;
+        }
+
+        .contact-info {
+            height: 100%;
+            background: white;
+            padding: 20px;
+            border: 2px solid #1e1e1e;
+        }
+
+        .contact-info h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .contact-info p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .contact-info .social-icons a {
+            width: 24px;
+            margin-right: 10px;
+            color: #1e1e1e;
+        }
+
+
+        footer {
+            background: #222;
+            color: white;
+            display: flex;
+            padding: 40px 10%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-left img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .footer-center {
+            text-align: center;
+        }
+
+        .footer-center h3 {
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 8px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #936d4e;
+        }
+
+        .footer-right {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .f {
+            background-color: #936d4e;
+            color: white;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .ff {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="head">
+        <header>
+            <nav>
+                <ul>
+                    <img class="logo" src="img/logo-white.png" alt="CAPELLA">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Registeration</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="h">Contact US</h1>
+    </div>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>We’d Love to Hear From You, Please Let Us Know</h2>
+            <p>
+                We value your feedback and would love to hear from you. Whether you have questions, comments, or
+                suggestions, your input is important to us.
+            </p>
+            <form>
+                <input type="text" placeholder="Name*" required>
+                <input type="email" placeholder="Email*" required>
+                <input type="text" placeholder="Subject">
+                <select>
+                    <option>Feedback</option>
+                    <option>Support</option>
+                    <option>General Inquiry</option>
+                </select>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="outer-border">
+            <div class="contact-info">
+                <h3>ADDRESS</h3>
+                <p>732/21 Second Street, Manchester,<br>King Street, Kingston<br>United Kingdom</p>
+
+                <h3>OPEN HOURS</h3>
+                <p>Monday - Friday 10 AM - 7 PM<br>
+                    <span>Tel:</span> +66 233459876<br>
+                    <span>Email:</span> mail@jcapella.com
+                </p>
+
+                <h3>FIND US ON</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="f">
+        <p>Experience the finest dining with our gourmet dishes and exceptional service.</p>
+    </div>
+
+    <footer>
+
+        <div class="footer-left">
+            <img src="img/image.png" alt="Restaurant Logo" />
+        </div>
+        <div class="footer-center">
+            <h3>ADDRESS</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Foodie Street, Flavor Town</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 10:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 12:00 PM - 11:00 PM</p>
+            <h3>Contact Us</h3>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: contact@restaurant.com</p>
+        </div>
+
+    </footer>
+
+    <div class="ff">
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
